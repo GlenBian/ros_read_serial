@@ -1,0 +1,8 @@
+<library path="lib/libyouibot_bms_nodelet">
+  <class name="youibot_bms/YouibotBmsNodelet" type="bms::YouibotBmsNodelet" base_class_type="nodelet::Nodelet">
+    <description>
+      Nodelet version of the Youibot Bms node
+    </description>
+  </class>
+</library>
+

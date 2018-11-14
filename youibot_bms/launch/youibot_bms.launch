@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+        <node pkg="nodelet" type="nodelet" name="bms_nodelet_manager" args="manager" output="screen"/>
+        <!-- imu -->
+        <node pkg="nodelet" type="nodelet" name="bms_base" args="load youibot_bms/YouibotBmsNodelet bms_nodelet_manager" output="screen">
+                <param name="major_frequency" value="50"/>
+                <param name="serial_id" value="/dev/bms"/>
+                <param name="baudrate" value="9600"/>
+                <param name="verbose" value="false"/>
+                <param name="batteries_number" value="16"/>
+        </node>
+</launch>
